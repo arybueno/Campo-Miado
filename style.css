@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+#tabuleiro {
+  display: grid;
+  margin: 20px auto;
+  gap: 4px;
+}
+
+.celula {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celula.revelada {
+  background: #fff;
+}
+
+.celula.gato {
+  background: #f7dede;
+}
+
+.bandeira {
+  color: red;
+}
