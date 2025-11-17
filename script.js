@@ -81,7 +81,7 @@ function colocarGatos(pl, pc) {
     colocados++;
   }
 
-  // contar vizinhos
+  //conta os vizinhos
   for (let l = 0; l < linhas; l++) {
     for (let c = 0; c < colunas; c++) {
       if (grid[l][c].gato) continue;
@@ -192,3 +192,4 @@ btn.onclick = iniciar;
 select.onchange = iniciar;
 
 iniciar();
+
