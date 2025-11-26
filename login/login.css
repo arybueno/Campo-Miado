@@ -1,0 +1,78 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f4f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #888;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+/* Botão de login */
+button.login-btn {
+  background: #75c18e;
+  color: white;
+}
+
+button.login-btn:hover {
+  background: #67ab7d;
+}
+
+/* Botão de criar conta */
+button.create-btn {
+  background: #e0dfda;
+  color: #333;
+}
+
+button.create-btn:hover {
+  background: #d5d4cf;
+}
+
+
+@media (max-width: 450px) {
+  .login-container {
+    padding: 20px 15px;
+  }
+}

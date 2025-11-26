@@ -1,0 +1,115 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f4f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.top-bar {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.top-bar h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.voltar {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #e0dfda;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.voltar:hover {
+  background: #d5d4cf;
+}
+
+
+.painel select, .painel button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.painel button {
+  background: #75c18e;
+  color: white;
+  border: none;
+  transition: 0.2s;
+}
+
+.painel button:hover {
+  background: #67ab7d;
+}
+
+/* Tabuleiro */
+#tabuleiro {
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.celula {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+    display: flex;
+  align-items: center;   
+  justify-content: center; 
+}
+
+.celula:hover {
+  background: #ccc;
+}
+.celula.revelada {
+  background: #ffffff; /* muda a cor ao revelar */
+  color: rgb(0, 0, 0);        
+}
+.painel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.painel span {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  font-size: 16px;
+}
+
+
+/* Responsivo */
+@media (max-width: 450px) {
+  .painel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

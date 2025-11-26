@@ -1,0 +1,49 @@
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  #listaRanking {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px #00000020;
+    border: 1px solid #e3e3e3;
+  }
+
+  .usuario img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .usuario span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+  }
+
+  .pontos {
+    margin-left: auto;
+    font-weight: bold;
+    color: #555;
+  }
