@@ -32,8 +32,7 @@ onAuthStateChanged(auth, async (user) => {
     nomeEl.textContent = nome;
     fotoEl.src = foto;
 
-botao.onclick = () => window.location.href = "./perfil/perfil.html";
-
+    botao.onclick = () => window.location.href = "./perfil/perfil.html";
 
   } else {
     // Usuário NÃO logado 
@@ -44,6 +43,7 @@ botao.onclick = () => window.location.href = "./perfil/perfil.html";
 
   }
 });
+
 
 
 
