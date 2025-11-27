@@ -22,13 +22,14 @@
       });
 
       alert("Conta criada!");
-      window.location.href = "Campo-Miado/perfil/perfil.html";
+      window.location.href = "/perfil/perfil.html";
 
     } catch (e) {
       alert(e.message);
     }
 
   }
+
 
 
 
