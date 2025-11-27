@@ -1,13 +1,29 @@
 import { collection, getDocs, query, orderBy }
   from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
 
-const db = window.db;
+// Espera o Firebase carregar
+const esperarFirebase = () =>
+  new Promise(resolve => {
+    const checar = setInterval(() => {
+      if (window.db) {
+        clearInterval(checar);
+        resolve(window.db);
+      }
+    }, 50);
+  });
+
 const lista = document.getElementById("listaRanking");
 
-async function carregarRanking() {
+(async () => {
+  const db = await esperarFirebase();
+  carregarRanking(db);
+})();
+
+
+async function carregarRanking(db) {
   const q = query(collection(db, "usuarios"), orderBy("pontos", "desc"));
   const snap = await getDocs(q);
-
+  
   snap.forEach(doc => {
     const dados = doc.data();
 
@@ -28,4 +44,6 @@ async function carregarRanking() {
   });
 }
 
+
 carregarRanking();
+
