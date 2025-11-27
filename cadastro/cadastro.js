@@ -16,7 +16,7 @@
 
       // salva nome, foto e pontos iniciais
       await setDoc(doc(db, "usuarios", user.uid), {
-        nome: "",
+        nome: "/Campo-Miado/img/gato.jpg",
         foto: "",
         pontos: 0
       });
@@ -29,6 +29,7 @@
     }
 
   }
+
 
 
 
