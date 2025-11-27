@@ -22,9 +22,10 @@
       });
 
       alert("Conta criada!");
-      window.location.href = "perfil.html";
+      window.location.href = "/perfil/perfil.html";
 
     } catch (e) {
       alert(e.message);
     }
+
   }
