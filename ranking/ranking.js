@@ -45,5 +45,6 @@ async function carregarRanking(db) {
 }
 
 
-carregarRanking();
+
+
 
