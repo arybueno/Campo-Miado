@@ -32,14 +32,16 @@ onAuthStateChanged(auth, async (user) => {
     nomeEl.textContent = nome;
     fotoEl.src = foto;
 
-    botao.onclick = () => window.location.href = "../perfil/perfil.html";
+botao.onclick = () => window.location.href = "../perfil/perfil.html";
+
 
   } else {
     // Usuário NÃO logado 
     nomeEl.textContent = "Entrar";
-    fotoEl.src = "/img/gato.jpg"; // ícone padrão
-    botao.onclick = () => window.location.href = "../login/login.html";
+    fotoEl.src = "./img/gato.jpg"; // ícone padrão
+    botao.onclick = () => window.location.href = "./login/login.html";
     pontosEl.innerText = "Pontuação: 0";
 
   }
 });
+
