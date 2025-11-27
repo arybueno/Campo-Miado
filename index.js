@@ -38,10 +38,11 @@ botao.onclick = () => window.location.href = "../perfil/perfil.html";
   } else {
     // Usuário NÃO logado 
     nomeEl.textContent = "Entrar";
-    fotoEl.src = "./img/gato.jpg"; // ícone padrão
+    fotoEl.src = "/Campo-Miado/img/gato.jpg"; // ícone padrão
     botao.onclick = () => window.location.href = "./login/login.html";
     pontosEl.innerText = "Pontuação: 0";
 
   }
 });
+
 
