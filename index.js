@@ -32,7 +32,7 @@ onAuthStateChanged(auth, async (user) => {
     nomeEl.textContent = nome;
     fotoEl.src = foto;
 
-botao.onclick = () => window.location.href = "../perfil/perfil.html";
+botao.onclick = () => window.location.href = "./perfil/perfil.html";
 
 
   } else {
@@ -44,5 +44,6 @@ botao.onclick = () => window.location.href = "../perfil/perfil.html";
 
   }
 });
+
 
 
