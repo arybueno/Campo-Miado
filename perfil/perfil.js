@@ -69,6 +69,7 @@
 
   window.logout = function () {
     signOut(auth).then(() => {
-      window.location.href = "/login/login.html";
+      window.location.href = "/Campo-Miado/login/login.html";
     });
+
   }
