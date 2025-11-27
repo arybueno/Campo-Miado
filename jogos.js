@@ -1,8 +1,8 @@
 const jogos = [
   {
     nome: "Kitties Wepper",
-    capa: "Campo-Miado/img/gatinho.jfif",
-    link: "Campo-Miado/kittieswepper/wepper.html"
+    capa: "img/gatinho.jfif",
+    link: "kittieswepper/wepper.html"
   }
 ];
 
@@ -20,5 +20,6 @@ jogos.forEach(jogo => {
 
   lista.appendChild(card);
 });
+
 
 
