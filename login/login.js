@@ -8,7 +8,8 @@
     signInWithEmailAndPassword(window.auth, email, senha)
       .then(() => {
         alert("Logado!");
-        window.location.href = "/perfil/perfil.html";
+        window.location.href = "Campo-Miado/perfil/perfil.html";
       })
       .catch(e => alert(e.message));
+
   }
